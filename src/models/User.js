@@ -15,15 +15,15 @@ UserSchema.methods.encryptPassword = async function(password){
     return hash
 }
 
-/*UserSchema.methods.comparePassword = function(candidatePassword, cb) {
+UserSchema.methods.comparePassword = function(candidatePassword, cb) {
     bcrypt.compare(candidatePassword, this.password, function(err, isMatch) {
         if (err) return cb(err);
         cb(null, isMatch);
     })
-}*/
+}
 
-UserSchema.methods.matchPassword = async function(password){
+/*UserSchema.methods.matchPassword = async function(password){
     return await bcrypt.compare(password, this.password)
     
-}
+}*/
 module.exports = mongoose.model('User', UserSchema)
