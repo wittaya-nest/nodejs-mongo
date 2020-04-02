@@ -1,0 +1,37 @@
+html,
+body {
+    height: 100%; /* ให้ html และ body สูงเต็มจอภาพไว้ก่อน */
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #1488CC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.logo {
+    width: 50%;
+    display: block;
+    padding-top: 15px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.footer {
+    background: rgb(56, 59, 61);
+    padding-top: 3px;
+    height: 25px; /* ความสูงของ footer */
+    display: block;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    
+  }
+  .footer .h3 {
+    font-size: small;
+  }
